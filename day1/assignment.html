@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            text-align: justify;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        function background(source)
+        {
+            document.getElementsByClassName("container")[0].style.backgroundColor=source.value;
+        }
+        function font(source)
+        {
+            col=document.getElementsByClassName("container")[0].style.color=source.value;;
+        }
+    </script>
+</head>
+<body>
+    <label>Set Background color
+        <input type="color" onchange="background(this)">
+   </label>
+    <br>
+    <label>Set Font color
+        <input type="color" onchange="font(this)">
+     </label>
+    <div class="container">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio cum beatae nesciunt consectetur magnam ducimus illum iste error. Dignissimos quaerat, consequatur voluptatibus suscipit tempore incidunt quis eligendi illum ipsa!
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, facere beatae tenetur enim sint distinctio ut quidem delectus accusamus praesentium quisquam fuga laboriosam dicta aliquid nemo maxime sed non quibusdam.
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, quibusdam inventore ut quis consectetur accusamus quidem. Aperiam odio eaque nisi quod dolore. Odit illum ullam quisquam, doloremque illo exercitationem culpa!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit totam porro ea quas, nulla aspernatur perferendis sed quidem doloribus pariatur sunt, numquam necessitatibus modi eveniet dolor. Fugit perspiciatis voluptate aliquid.
+    </div>
+</body>
+</html>
+
